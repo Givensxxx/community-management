@@ -1,4 +1,4 @@
-﻿spring:
+spring:
   application:
     name: community-management
   datasource:
@@ -6,12 +6,6 @@
     url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/community_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false}
     username: ${SPRING_DATASOURCE_USERNAME:root}
     password: ${SPRING_DATASOURCE_PASSWORD:123456}
-  data:
-    redis:
-      host: ${SPRING_REDIS_HOST:localhost}
-      port: ${SPRING_REDIS_PORT:6379}
-      password: ${SPRING_REDIS_PASSWORD:}
-      timeout: 6000ms
   servlet:
     multipart:
       max-file-size: 10MB
